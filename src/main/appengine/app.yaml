@@ -1,0 +1,13 @@
+runtime: java11
+
+# Explicitly set the memory limit and maximum heap size for the Spring Boot app
+env_variables:
+  JAVA_TOOL_OPTIONS: "-XX:MaxRAM=256m -XX:ActiveProcessorCount=2 -Xmx32m"
+
+manual_scaling:
+  instances: 1
+
+resources:
+  cpu: 1
+  memory_gb: 1
+  disk_size_gb: 10

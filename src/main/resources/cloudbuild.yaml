@@ -1,0 +1,4 @@
+steps:
+  - name: maven:3.6.0-jdk-11-slim
+    entrypoint: 'mvn'
+    args: ['clean', 'package', 'appengine:deploy', '-DskipTests', '-Dapp.deploy.projectId=springboot-training-leowrest']
